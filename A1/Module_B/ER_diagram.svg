@@ -1,0 +1,574 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1426pt" height="2390pt" viewBox="0.00 0.00 1426.00 2390.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2386.4)">
+<title>FOOD_DELIVERY_ERD</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-2386.4 1421.84,-2386.4 1421.84,4 -4,4"/>
+<!-- MEMBER -->
+<g id="node1" class="node">
+<title>MEMBER</title>
+<path fill="#b3d9ff" stroke="black" d="M930.17,-2382.4C930.17,-2382.4 838.81,-2382.4 838.81,-2382.4 832.81,-2382.4 826.81,-2376.4 826.81,-2370.4 826.81,-2370.4 826.81,-2213.6 826.81,-2213.6 826.81,-2207.6 832.81,-2201.6 838.81,-2201.6 838.81,-2201.6 930.17,-2201.6 930.17,-2201.6 936.17,-2201.6 942.17,-2207.6 942.17,-2213.6 942.17,-2213.6 942.17,-2370.4 942.17,-2370.4 942.17,-2376.4 936.17,-2382.4 930.17,-2382.4"/>
+<text xml:space="preserve" text-anchor="start" x="861.48" y="-2362.6" font-family="Arial" font-weight="bold" font-size="12.00">Member</text>
+<text xml:space="preserve" text-anchor="start" x="840.81" y="-2338.2" font-family="Arial" text-decoration="underline" font-size="12.00">member_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="840.81" y="-2312.8" font-family="Arial" font-size="12.00">name</text>
+<text xml:space="preserve" text-anchor="start" x="840.81" y="-2288.4" font-family="Arial" font-size="12.00">email (UNIQUE)</text>
+<text xml:space="preserve" text-anchor="start" x="840.81" y="-2264" font-family="Arial" font-size="12.00">contact_number</text>
+<text xml:space="preserve" text-anchor="start" x="840.81" y="-2239.6" font-family="Arial" font-size="12.00">age</text>
+<text xml:space="preserve" text-anchor="start" x="840.81" y="-2215.2" font-family="Arial" font-size="12.00">image_url</text>
+</g>
+<!-- R1 -->
+<g id="node17" class="node">
+<title>R1</title>
+<polygon fill="#eeeeee" stroke="black" points="884.49,-2094.4 857.49,-2076.4 884.49,-2058.4 911.49,-2076.4 884.49,-2094.4"/>
+<text xml:space="preserve" text-anchor="middle" x="884.49" y="-2072.8" font-family="Arial" font-size="12.00">is</text>
+</g>
+<!-- MEMBER&#45;&gt;R1 -->
+<g id="edge1" class="edge">
+<title>MEMBER-&gt;R1</title>
+<path fill="none" stroke="black" d="M884.49,-2201.19C884.49,-2201.19 884.49,-2106.2 884.49,-2106.2"/>
+<polygon fill="black" stroke="black" points="887.99,-2106.2 884.49,-2096.2 880.99,-2106.2 887.99,-2106.2"/>
+<text xml:space="preserve" text-anchor="middle" x="887.55" y="-2144.7" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R2 -->
+<g id="node18" class="node">
+<title>R2</title>
+<polygon fill="#eeeeee" stroke="black" points="1247.49,-2011.4 1220.49,-1993.4 1247.49,-1975.4 1274.49,-1993.4 1247.49,-2011.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1247.49" y="-1989.8" font-family="Arial" font-size="12.00">is</text>
+</g>
+<!-- MEMBER&#45;&gt;R2 -->
+<g id="edge3" class="edge">
+<title>MEMBER-&gt;R2</title>
+<path fill="none" stroke="black" d="M926.83,-2201.48C926.83,-2113.48 926.83,-1993 926.83,-1993 926.83,-1993 1208.91,-1993 1208.91,-1993"/>
+<polygon fill="black" stroke="black" points="1208.91,-1996.5 1218.91,-1993 1208.91,-1989.5 1208.91,-1996.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1174.55" y="-2144.7" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R3 -->
+<g id="node19" class="node">
+<title>R3</title>
+<polygon fill="#eeeeee" stroke="black" points="721.49,-2094.4 694.49,-2076.4 721.49,-2058.4 748.49,-2076.4 721.49,-2094.4"/>
+<text xml:space="preserve" text-anchor="middle" x="721.49" y="-2072.8" font-family="Arial" font-size="12.00">is</text>
+</g>
+<!-- MEMBER&#45;&gt;R3 -->
+<g id="edge5" class="edge">
+<title>MEMBER-&gt;R3</title>
+<path fill="none" stroke="black" d="M842.15,-2201.34C842.15,-2142.22 842.15,-2076 842.15,-2076 842.15,-2076 760.08,-2076 760.08,-2076"/>
+<polygon fill="black" stroke="black" points="760.08,-2072.5 750.08,-2076 760.08,-2079.5 760.08,-2072.5"/>
+<text xml:space="preserve" text-anchor="middle" x="783.55" y="-2144.7" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- CUSTOMER -->
+<g id="node2" class="node">
+<title>CUSTOMER</title>
+<path fill="#b3d9ff" stroke="black" d="M986.84,-1928.4C986.84,-1928.4 782.14,-1928.4 782.14,-1928.4 776.14,-1928.4 770.14,-1922.4 770.14,-1916.4 770.14,-1916.4 770.14,-1808.4 770.14,-1808.4 770.14,-1802.4 776.14,-1796.4 782.14,-1796.4 782.14,-1796.4 986.84,-1796.4 986.84,-1796.4 992.84,-1796.4 998.84,-1802.4 998.84,-1808.4 998.84,-1808.4 998.84,-1916.4 998.84,-1916.4 998.84,-1922.4 992.84,-1928.4 986.84,-1928.4"/>
+<text xml:space="preserve" text-anchor="start" x="856.48" y="-1908.6" font-family="Arial" font-weight="bold" font-size="12.00">Customer</text>
+<text xml:space="preserve" text-anchor="start" x="784.14" y="-1884.2" font-family="Arial" text-decoration="underline" font-size="12.00">customer_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="784.14" y="-1858.8" font-family="Arial" font-size="12.00">member_id (FK → Member, UNIQUE)</text>
+<text xml:space="preserve" text-anchor="start" x="784.14" y="-1834.4" font-family="Arial" font-size="12.00">signup_date</text>
+<text xml:space="preserve" text-anchor="start" x="784.14" y="-1810" font-family="Arial" font-size="12.00">loyalty_points</text>
+</g>
+<!-- R4 -->
+<g id="node20" class="node">
+<title>R4</title>
+<polygon fill="#eeeeee" stroke="black" points="893.49,-1689.2 861.56,-1671.2 893.49,-1653.2 925.42,-1671.2 893.49,-1689.2"/>
+<text xml:space="preserve" text-anchor="middle" x="893.49" y="-1667.6" font-family="Arial" font-size="12.00">has</text>
+</g>
+<!-- CUSTOMER&#45;&gt;R4 -->
+<g id="edge7" class="edge">
+<title>CUSTOMER-&gt;R4</title>
+<path fill="none" stroke="black" d="M893.49,-1796.06C893.49,-1796.06 893.49,-1700.97 893.49,-1700.97"/>
+<polygon fill="black" stroke="black" points="896.99,-1700.97 893.49,-1690.97 889.99,-1700.97 896.99,-1700.97"/>
+<text xml:space="preserve" text-anchor="middle" x="893.55" y="-1739.5" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R8 -->
+<g id="node24" class="node">
+<title>R8</title>
+<polygon fill="#eeeeee" stroke="black" points="712.49,-1606.2 666.7,-1588.2 712.49,-1570.2 758.27,-1588.2 712.49,-1606.2"/>
+<text xml:space="preserve" text-anchor="middle" x="712.49" y="-1584.6" font-family="Arial" font-size="12.00">places</text>
+</g>
+<!-- CUSTOMER&#45;&gt;R8 -->
+<g id="edge15" class="edge">
+<title>CUSTOMER-&gt;R8</title>
+<path fill="none" stroke="black" d="M782.6,-1795.98C782.6,-1714.77 782.6,-1588 782.6,-1588 782.6,-1588 770.38,-1588 770.38,-1588"/>
+<polygon fill="black" stroke="black" points="770.38,-1584.5 760.38,-1588 770.38,-1591.5 770.38,-1584.5"/>
+<text xml:space="preserve" text-anchor="middle" x="724.55" y="-1739.5" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- PARTNER -->
+<g id="node3" class="node">
+<title>PARTNER</title>
+<path fill="#b3d9ff" stroke="black" d="M1405.84,-1031C1405.84,-1031 1201.14,-1031 1201.14,-1031 1195.14,-1031 1189.14,-1025 1189.14,-1019 1189.14,-1019 1189.14,-886.6 1189.14,-886.6 1189.14,-880.6 1195.14,-874.6 1201.14,-874.6 1201.14,-874.6 1405.84,-874.6 1405.84,-874.6 1411.84,-874.6 1417.84,-880.6 1417.84,-886.6 1417.84,-886.6 1417.84,-1019 1417.84,-1019 1417.84,-1025 1411.84,-1031 1405.84,-1031"/>
+<text xml:space="preserve" text-anchor="start" x="1259.13" y="-1011.2" font-family="Arial" font-weight="bold" font-size="12.00">DeliveryPartner</text>
+<text xml:space="preserve" text-anchor="start" x="1203.14" y="-986.8" font-family="Arial" text-decoration="underline" font-size="12.00">partner_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="1203.14" y="-961.4" font-family="Arial" font-size="12.00">member_id (FK → Member, UNIQUE)</text>
+<text xml:space="preserve" text-anchor="start" x="1203.14" y="-937" font-family="Arial" font-size="12.00">vehicle_type</text>
+<text xml:space="preserve" text-anchor="start" x="1203.14" y="-912.6" font-family="Arial" font-size="12.00">availability_status</text>
+<text xml:space="preserve" text-anchor="start" x="1203.14" y="-888.2" font-family="Arial" font-size="12.00">rating</text>
+</g>
+<!-- R15 -->
+<g id="node31" class="node">
+<title>R15</title>
+<polygon fill="#eeeeee" stroke="black" points="1303.49,-730.8 1251.69,-712.8 1303.49,-694.8 1355.29,-712.8 1303.49,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1303.49" y="-709.2" font-family="Arial" font-size="12.00">delivers</text>
+</g>
+<!-- PARTNER&#45;&gt;R15 -->
+<g id="edge30" class="edge">
+<title>PARTNER-&gt;R15</title>
+<path fill="none" stroke="black" d="M1303.49,-874.22C1303.49,-874.22 1303.49,-742.51 1303.49,-742.51"/>
+<polygon fill="black" stroke="black" points="1306.99,-742.51 1303.49,-732.51 1299.99,-742.51 1306.99,-742.51"/>
+<text xml:space="preserve" text-anchor="middle" x="1306.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R18 -->
+<g id="node34" class="node">
+<title>R18</title>
+<polygon fill="#eeeeee" stroke="black" points="902.49,-730.8 813.34,-712.8 902.49,-694.8 991.64,-712.8 902.49,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="902.49" y="-709.2" font-family="Arial" font-size="12.00">delivery_review</text>
+</g>
+<!-- PARTNER&#45;&gt;R18 -->
+<g id="edge39" class="edge">
+<title>PARTNER-&gt;R18</title>
+<path fill="none" stroke="black" d="M1189.08,-953C1096.98,-953 982.82,-953 982.82,-953 982.82,-953 982.82,-726.39 982.82,-726.39"/>
+<polygon fill="black" stroke="black" points="986.32,-726.39 982.82,-716.39 979.32,-726.39 986.32,-726.39"/>
+<text xml:space="preserve" text-anchor="middle" x="1167.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- OWNER -->
+<g id="node4" class="node">
+<title>OWNER</title>
+<path fill="#b3d9ff" stroke="black" d="M685.17,-1928.4C685.17,-1928.4 533.81,-1928.4 533.81,-1928.4 527.81,-1928.4 521.81,-1922.4 521.81,-1916.4 521.81,-1916.4 521.81,-1808.4 521.81,-1808.4 521.81,-1802.4 527.81,-1796.4 533.81,-1796.4 533.81,-1796.4 685.17,-1796.4 685.17,-1796.4 691.17,-1796.4 697.17,-1802.4 697.17,-1808.4 697.17,-1808.4 697.17,-1916.4 697.17,-1916.4 697.17,-1922.4 691.17,-1928.4 685.17,-1928.4"/>
+<text xml:space="preserve" text-anchor="start" x="559.48" y="-1908.6" font-family="Arial" font-weight="bold" font-size="12.00">RestaurantOwner</text>
+<text xml:space="preserve" text-anchor="start" x="535.81" y="-1884.2" font-family="Arial" text-decoration="underline" font-size="12.00">owner_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="535.81" y="-1858.8" font-family="Arial" font-size="12.00">member_id (FK → Member)</text>
+<text xml:space="preserve" text-anchor="start" x="535.81" y="-1834.4" font-family="Arial" font-size="12.00">role_start_date</text>
+<text xml:space="preserve" text-anchor="start" x="535.81" y="-1810" font-family="Arial" font-size="12.00">is_active</text>
+</g>
+<!-- R5 -->
+<g id="node21" class="node">
+<title>R5</title>
+<polygon fill="#eeeeee" stroke="black" points="513.49,-1689.2 473.73,-1671.2 513.49,-1653.2 553.24,-1671.2 513.49,-1689.2"/>
+<text xml:space="preserve" text-anchor="middle" x="513.49" y="-1667.6" font-family="Arial" font-size="12.00">owns</text>
+</g>
+<!-- OWNER&#45;&gt;R5 -->
+<g id="edge9" class="edge">
+<title>OWNER-&gt;R5</title>
+<path fill="none" stroke="black" d="M537.53,-1796.06C537.53,-1796.06 537.53,-1690.34 537.53,-1690.34"/>
+<polygon fill="black" stroke="black" points="541.03,-1690.34 537.53,-1680.34 534.03,-1690.34 541.03,-1690.34"/>
+<text xml:space="preserve" text-anchor="middle" x="611.55" y="-1739.5" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- ADDRESS -->
+<g id="node5" class="node">
+<title>ADDRESS</title>
+<path fill="#d9f2d9" stroke="black" d="M988.84,-1523.2C988.84,-1523.2 824.14,-1523.2 824.14,-1523.2 818.14,-1523.2 812.14,-1517.2 812.14,-1511.2 812.14,-1511.2 812.14,-1330 812.14,-1330 812.14,-1324 818.14,-1318 824.14,-1318 824.14,-1318 988.84,-1318 988.84,-1318 994.84,-1318 1000.84,-1324 1000.84,-1330 1000.84,-1330 1000.84,-1511.2 1000.84,-1511.2 1000.84,-1517.2 994.84,-1523.2 988.84,-1523.2"/>
+<text xml:space="preserve" text-anchor="start" x="882.48" y="-1503.4" font-family="Arial" font-weight="bold" font-size="12.00">Address</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1479" font-family="Arial" text-decoration="underline" font-size="12.00">address_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1453.6" font-family="Arial" font-size="12.00">customer_id (FK → Customer)</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1429.2" font-family="Arial" font-size="12.00">house_no</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1404.8" font-family="Arial" font-size="12.00">city</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1380.4" font-family="Arial" font-size="12.00">street</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1356" font-family="Arial" font-size="12.00">pincode</text>
+<text xml:space="preserve" text-anchor="start" x="826.14" y="-1331.6" font-family="Arial" font-size="12.00">landmark</text>
+</g>
+<!-- R10 -->
+<g id="node26" class="node">
+<title>R10</title>
+<polygon fill="#eeeeee" stroke="black" points="900.49,-1210.8 826.98,-1192.8 900.49,-1174.8 973.99,-1192.8 900.49,-1210.8"/>
+<text xml:space="preserve" text-anchor="middle" x="900.49" y="-1189.2" font-family="Arial" font-size="12.00">delivered_to</text>
+</g>
+<!-- ADDRESS&#45;&gt;R10 -->
+<g id="edge19" class="edge">
+<title>ADDRESS-&gt;R10</title>
+<path fill="none" stroke="black" d="M900.49,-1317.7C900.49,-1317.7 900.49,-1222.73 900.49,-1222.73"/>
+<polygon fill="black" stroke="black" points="903.99,-1222.73 900.49,-1212.73 896.99,-1222.73 903.99,-1222.73"/>
+<text xml:space="preserve" text-anchor="middle" x="904.55" y="-1261.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- RESTAURANT -->
+<g id="node6" class="node">
+<title>RESTAURANT</title>
+<path fill="#d9f2d9" stroke="black" d="M536.52,-1523.2C536.52,-1523.2 346.45,-1523.2 346.45,-1523.2 340.45,-1523.2 334.45,-1517.2 334.45,-1511.2 334.45,-1511.2 334.45,-1330 334.45,-1330 334.45,-1324 340.45,-1318 346.45,-1318 346.45,-1318 536.52,-1318 536.52,-1318 542.52,-1318 548.52,-1324 548.52,-1330 548.52,-1330 548.52,-1511.2 548.52,-1511.2 548.52,-1517.2 542.52,-1523.2 536.52,-1523.2"/>
+<text xml:space="preserve" text-anchor="start" x="410.15" y="-1503.4" font-family="Arial" font-weight="bold" font-size="12.00">Restaurant</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1479" font-family="Arial" text-decoration="underline" font-size="12.00">restaurant_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1453.6" font-family="Arial" font-size="12.00">owner_id (FK → RestaurantOwner)</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1429.2" font-family="Arial" font-size="12.00">name</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1404.8" font-family="Arial" font-size="12.00">location</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1380.4" font-family="Arial" font-size="12.00">is_open</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1356" font-family="Arial" font-size="12.00">contact_number</text>
+<text xml:space="preserve" text-anchor="start" x="348.45" y="-1331.6" font-family="Arial" font-size="12.00">rating</text>
+</g>
+<!-- R6 -->
+<g id="node22" class="node">
+<title>R6</title>
+<polygon fill="#eeeeee" stroke="black" points="238.49,-1210.8 206.56,-1192.8 238.49,-1174.8 270.42,-1192.8 238.49,-1210.8"/>
+<text xml:space="preserve" text-anchor="middle" x="238.49" y="-1189.2" font-family="Arial" font-size="12.00">has</text>
+</g>
+<!-- RESTAURANT&#45;&gt;R6 -->
+<g id="edge11" class="edge">
+<title>RESTAURANT-&gt;R6</title>
+<path fill="none" stroke="black" d="M344.45,-1317.79C344.45,-1257.47 344.45,-1193 344.45,-1193 344.45,-1193 282.37,-1193 282.37,-1193"/>
+<polygon fill="black" stroke="black" points="282.37,-1189.5 272.37,-1193 282.37,-1196.5 282.37,-1189.5"/>
+<text xml:space="preserve" text-anchor="middle" x="287.55" y="-1261.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R9 -->
+<g id="node25" class="node">
+<title>R9</title>
+<polygon fill="#eeeeee" stroke="black" points="543.49,-1210.8 488.68,-1192.8 543.49,-1174.8 598.3,-1192.8 543.49,-1210.8"/>
+<text xml:space="preserve" text-anchor="middle" x="543.49" y="-1189.2" font-family="Arial" font-size="12.00">receives</text>
+</g>
+<!-- RESTAURANT&#45;&gt;R9 -->
+<g id="edge17" class="edge">
+<title>RESTAURANT-&gt;R9</title>
+<path fill="none" stroke="black" d="M518.6,-1317.7C518.6,-1317.7 518.6,-1214.38 518.6,-1214.38"/>
+<polygon fill="black" stroke="black" points="522.1,-1214.38 518.6,-1204.38 515.1,-1214.38 522.1,-1214.38"/>
+<text xml:space="preserve" text-anchor="middle" x="521.55" y="-1261.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R17 -->
+<g id="node33" class="node">
+<title>R17</title>
+<polygon fill="#eeeeee" stroke="black" points="454.49,-730.8 381.59,-712.8 454.49,-694.8 527.39,-712.8 454.49,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="454.49" y="-709.2" font-family="Arial" font-size="12.00">food_review</text>
+</g>
+<!-- RESTAURANT&#45;&gt;R17 -->
+<g id="edge36" class="edge">
+<title>RESTAURANT-&gt;R17</title>
+<path fill="none" stroke="black" d="M435.13,-1317.68C435.13,-1317.68 435.13,-737.69 435.13,-737.69"/>
+<polygon fill="black" stroke="black" points="438.63,-737.69 435.13,-727.69 431.63,-737.69 438.63,-737.69"/>
+<text xml:space="preserve" text-anchor="middle" x="382.55" y="-1117.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- CATEGORY -->
+<g id="node7" class="node">
+<title>CATEGORY</title>
+<path fill="#d9f2d9" stroke="black" d="M114.18,-1486.6C114.18,-1486.6 20.8,-1486.6 20.8,-1486.6 14.8,-1486.6 8.8,-1480.6 8.8,-1474.6 8.8,-1474.6 8.8,-1366.6 8.8,-1366.6 8.8,-1360.6 14.8,-1354.6 20.8,-1354.6 20.8,-1354.6 114.18,-1354.6 114.18,-1354.6 120.18,-1354.6 126.18,-1360.6 126.18,-1366.6 126.18,-1366.6 126.18,-1474.6 126.18,-1474.6 126.18,-1480.6 120.18,-1486.6 114.18,-1486.6"/>
+<text xml:space="preserve" text-anchor="start" x="41.48" y="-1466.8" font-family="Arial" font-weight="bold" font-size="12.00">Category</text>
+<text xml:space="preserve" text-anchor="start" x="22.8" y="-1442.4" font-family="Arial" text-decoration="underline" font-size="12.00">category_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="22.8" y="-1417" font-family="Arial" font-size="12.00">category_name</text>
+<text xml:space="preserve" text-anchor="start" x="22.8" y="-1392.6" font-family="Arial" font-size="12.00">is_veg</text>
+<text xml:space="preserve" text-anchor="start" x="22.8" y="-1368.2" font-family="Arial" font-size="12.00">description</text>
+</g>
+<!-- R7 -->
+<g id="node23" class="node">
+<title>R7</title>
+<polygon fill="#eeeeee" stroke="black" points="67.49,-1210.8 0,-1192.8 67.49,-1174.8 134.98,-1192.8 67.49,-1210.8"/>
+<text xml:space="preserve" text-anchor="middle" x="67.49" y="-1189.2" font-family="Arial" font-size="12.00">belongs_to</text>
+</g>
+<!-- CATEGORY&#45;&gt;R7 -->
+<g id="edge13" class="edge">
+<title>CATEGORY-&gt;R7</title>
+<path fill="none" stroke="black" d="M67.49,-1354.4C67.49,-1354.4 67.49,-1222.5 67.49,-1222.5"/>
+<polygon fill="black" stroke="black" points="70.99,-1222.5 67.49,-1212.5 63.99,-1222.5 70.99,-1222.5"/>
+<text xml:space="preserve" text-anchor="middle" x="70.55" y="-1261.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- MENUITEM -->
+<g id="node8" class="node">
+<title>MENUITEM</title>
+<path fill="#d9f2d9" stroke="black" d="M258.52,-1055.4C258.52,-1055.4 82.45,-1055.4 82.45,-1055.4 76.45,-1055.4 70.45,-1049.4 70.45,-1043.4 70.45,-1043.4 70.45,-862.2 70.45,-862.2 70.45,-856.2 76.45,-850.2 82.45,-850.2 82.45,-850.2 258.52,-850.2 258.52,-850.2 264.52,-850.2 270.52,-856.2 270.52,-862.2 270.52,-862.2 270.52,-1043.4 270.52,-1043.4 270.52,-1049.4 264.52,-1055.4 258.52,-1055.4"/>
+<text xml:space="preserve" text-anchor="start" x="142.49" y="-1035.6" font-family="Arial" font-weight="bold" font-size="12.00">MenuItem</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-1011.2" font-family="Arial" text-decoration="underline" font-size="12.00">item_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-985.8" font-family="Arial" font-size="12.00">restaurant_id (FK → Restaurant)</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-961.4" font-family="Arial" font-size="12.00">category_id (FK → Category)</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-937" font-family="Arial" font-size="12.00">item_name</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-912.6" font-family="Arial" font-size="12.00">price</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-888.2" font-family="Arial" font-size="12.00">availability</text>
+<text xml:space="preserve" text-anchor="start" x="84.45" y="-863.8" font-family="Arial" font-size="12.00">image_url</text>
+</g>
+<!-- R12 -->
+<g id="node28" class="node">
+<title>R12</title>
+<polygon fill="#eeeeee" stroke="black" points="196.49,-730.8 141.67,-712.8 196.49,-694.8 251.31,-712.8 196.49,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="196.49" y="-709.2" font-family="Arial" font-size="12.00">contains</text>
+</g>
+<!-- MENUITEM&#45;&gt;R12 -->
+<g id="edge25" class="edge">
+<title>MENUITEM-&gt;R12</title>
+<path fill="none" stroke="black" d="M178.21,-849.97C178.21,-849.97 178.21,-736.59 178.21,-736.59"/>
+<polygon fill="black" stroke="black" points="181.71,-736.59 178.21,-726.59 174.71,-736.59 181.71,-736.59"/>
+<text xml:space="preserve" text-anchor="middle" x="190.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- OFFER -->
+<g id="node9" class="node">
+<title>OFFER</title>
+<path fill="#fff2b3" stroke="black" d="M1203.84,-1511C1203.84,-1511 1085.14,-1511 1085.14,-1511 1079.14,-1511 1073.14,-1505 1073.14,-1499 1073.14,-1499 1073.14,-1342.2 1073.14,-1342.2 1073.14,-1336.2 1079.14,-1330.2 1085.14,-1330.2 1085.14,-1330.2 1203.84,-1330.2 1203.84,-1330.2 1209.84,-1330.2 1215.84,-1336.2 1215.84,-1342.2 1215.84,-1342.2 1215.84,-1499 1215.84,-1499 1215.84,-1505 1209.84,-1511 1203.84,-1511"/>
+<text xml:space="preserve" text-anchor="start" x="1130.15" y="-1491.2" font-family="Arial" font-weight="bold" font-size="12.00">Offer</text>
+<text xml:space="preserve" text-anchor="start" x="1087.14" y="-1466.8" font-family="Arial" text-decoration="underline" font-size="12.00">offer_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="1087.14" y="-1441.4" font-family="Arial" font-size="12.00">offer_code (UNIQUE)</text>
+<text xml:space="preserve" text-anchor="start" x="1087.14" y="-1417" font-family="Arial" font-size="12.00">discount_type</text>
+<text xml:space="preserve" text-anchor="start" x="1087.14" y="-1392.6" font-family="Arial" font-size="12.00">discount_value</text>
+<text xml:space="preserve" text-anchor="start" x="1087.14" y="-1368.2" font-family="Arial" font-size="12.00">min_order_amount</text>
+<text xml:space="preserve" text-anchor="start" x="1087.14" y="-1343.8" font-family="Arial" font-size="12.00">is_active</text>
+</g>
+<!-- R11 -->
+<g id="node27" class="node">
+<title>R11</title>
+<polygon fill="#eeeeee" stroke="black" points="1114.49,-1210.8 1077.14,-1192.8 1114.49,-1174.8 1151.84,-1192.8 1114.49,-1210.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1114.49" y="-1189.2" font-family="Arial" font-size="12.00">uses</text>
+</g>
+<!-- OFFER&#45;&gt;R11 -->
+<g id="edge21" class="edge">
+<title>OFFER-&gt;R11</title>
+<path fill="none" stroke="black" d="M1114.49,-1329.91C1114.49,-1329.91 1114.49,-1222.44 1114.49,-1222.44"/>
+<polygon fill="black" stroke="black" points="1117.99,-1222.44 1114.49,-1212.44 1110.99,-1222.44 1117.99,-1222.44"/>
+<text xml:space="preserve" text-anchor="middle" x="1147.55" y="-1261.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- ORDERS -->
+<g id="node10" class="node">
+<title>ORDERS</title>
+<path fill="#ffd9b3" stroke="black" d="M795.52,-1067.6C795.52,-1067.6 619.45,-1067.6 619.45,-1067.6 613.45,-1067.6 607.45,-1061.6 607.45,-1055.6 607.45,-1055.6 607.45,-850 607.45,-850 607.45,-844 613.45,-838 619.45,-838 619.45,-838 795.52,-838 795.52,-838 801.52,-838 807.52,-844 807.52,-850 807.52,-850 807.52,-1055.6 807.52,-1055.6 807.52,-1061.6 801.52,-1067.6 795.52,-1067.6"/>
+<text xml:space="preserve" text-anchor="start" x="687.81" y="-1047.8" font-family="Arial" font-weight="bold" font-size="12.00">Orders</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-1023.4" font-family="Arial" text-decoration="underline" font-size="12.00">order_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-998" font-family="Arial" font-size="12.00">customer_id (FK → Customer)</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-973.6" font-family="Arial" font-size="12.00">restaurant_id (FK → Restaurant)</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-949.2" font-family="Arial" font-size="12.00">address_id (FK → Address)</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-924.8" font-family="Arial" font-size="12.00">offer_id (FK → Offer)</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-900.4" font-family="Arial" font-size="12.00">order_time</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-876" font-family="Arial" font-size="12.00">order_status</text>
+<text xml:space="preserve" text-anchor="start" x="621.45" y="-851.6" font-family="Arial" font-size="12.00">total_amount</text>
+</g>
+<!-- ORDERS&#45;&gt;R12 -->
+<g id="edge23" class="edge">
+<title>ORDERS-&gt;R12</title>
+<path fill="none" stroke="black" d="M607.18,-846C463.12,-846 214.76,-846 214.76,-846 214.76,-846 214.76,-736.61 214.76,-736.61"/>
+<polygon fill="black" stroke="black" points="218.26,-736.61 214.76,-726.61 211.26,-736.61 218.26,-736.61"/>
+<text xml:space="preserve" text-anchor="middle" x="508.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R13 -->
+<g id="node29" class="node">
+<title>R13</title>
+<polygon fill="#eeeeee" stroke="black" points="705.49,-730.8 673.56,-712.8 705.49,-694.8 737.42,-712.8 705.49,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="705.49" y="-709.2" font-family="Arial" font-size="12.00">has</text>
+</g>
+<!-- ORDERS&#45;&gt;R13 -->
+<g id="edge26" class="edge">
+<title>ORDERS-&gt;R13</title>
+<path fill="none" stroke="black" d="M705.49,-837.72C705.49,-837.72 705.49,-742.88 705.49,-742.88"/>
+<polygon fill="black" stroke="black" points="708.99,-742.88 705.49,-732.88 701.99,-742.88 708.99,-742.88"/>
+<text xml:space="preserve" text-anchor="middle" x="709.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R14 -->
+<g id="node30" class="node">
+<title>R14</title>
+<polygon fill="#eeeeee" stroke="black" points="1121.49,-730.8 1063.65,-712.8 1121.49,-694.8 1179.33,-712.8 1121.49,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1121.49" y="-709.2" font-family="Arial" font-size="12.00">assigned</text>
+</g>
+<!-- ORDERS&#45;&gt;R14 -->
+<g id="edge28" class="edge">
+<title>ORDERS-&gt;R14</title>
+<path fill="none" stroke="black" d="M808.02,-862C914.81,-862 1068.39,-862 1068.39,-862 1068.39,-862 1068.39,-725.99 1068.39,-725.99"/>
+<polygon fill="black" stroke="black" points="1071.89,-725.99 1068.39,-715.99 1064.89,-725.99 1071.89,-725.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1028.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- ORDERS&#45;&gt;R17 -->
+<g id="edge34" class="edge">
+<title>ORDERS-&gt;R17</title>
+<path fill="none" stroke="black" d="M607.18,-842C557.51,-842 508.03,-842 508.03,-842 508.03,-842 508.03,-729.54 508.03,-729.54"/>
+<polygon fill="black" stroke="black" points="511.53,-729.54 508.03,-719.54 504.53,-729.54 511.53,-729.54"/>
+<text xml:space="preserve" text-anchor="middle" x="614.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- ORDERS&#45;&gt;R18 -->
+<g id="edge37" class="edge">
+<title>ORDERS-&gt;R18</title>
+<path fill="none" stroke="black" d="M807.67,-850C815.33,-850 820.16,-850 820.16,-850 820.16,-850 820.16,-725.85 820.16,-725.85"/>
+<polygon fill="black" stroke="black" points="823.66,-725.85 820.16,-715.85 816.66,-725.85 823.66,-725.85"/>
+<text xml:space="preserve" text-anchor="middle" x="849.55" y="-781.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- ORDERITEM -->
+<g id="node11" class="node">
+<title>ORDERITEM</title>
+<path fill="#ffd9b3" stroke="black" d="M266.17,-575.4C266.17,-575.4 126.8,-575.4 126.8,-575.4 120.8,-575.4 114.8,-569.4 114.8,-563.4 114.8,-563.4 114.8,-431 114.8,-431 114.8,-425 120.8,-419 126.8,-419 126.8,-419 266.17,-419 266.17,-419 272.17,-419 278.17,-425 278.17,-431 278.17,-431 278.17,-563.4 278.17,-563.4 278.17,-569.4 272.17,-575.4 266.17,-575.4"/>
+<text xml:space="preserve" text-anchor="start" x="167.81" y="-555.6" font-family="Arial" font-weight="bold" font-size="12.00">OrderItem</text>
+<text xml:space="preserve" text-anchor="start" x="128.8" y="-531.2" font-family="Arial" text-decoration="underline" font-size="12.00">order_item_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="128.8" y="-505.8" font-family="Arial" font-size="12.00">order_id (FK → Orders)</text>
+<text xml:space="preserve" text-anchor="start" x="128.8" y="-481.4" font-family="Arial" font-size="12.00">item_id (FK → MenuItem)</text>
+<text xml:space="preserve" text-anchor="start" x="128.8" y="-457" font-family="Arial" font-size="12.00">quantity</text>
+<text xml:space="preserve" text-anchor="start" x="128.8" y="-432.6" font-family="Arial" font-size="12.00">item_price</text>
+</g>
+<!-- PAYMENT -->
+<g id="node12" class="node">
+<title>PAYMENT</title>
+<path fill="#ffd9b3" stroke="black" d="M768.5,-587.6C768.5,-587.6 640.47,-587.6 640.47,-587.6 634.47,-587.6 628.47,-581.6 628.47,-575.6 628.47,-575.6 628.47,-418.8 628.47,-418.8 628.47,-412.8 634.47,-406.8 640.47,-406.8 640.47,-406.8 768.5,-406.8 768.5,-406.8 774.5,-406.8 780.5,-412.8 780.5,-418.8 780.5,-418.8 780.5,-575.6 780.5,-575.6 780.5,-581.6 774.5,-587.6 768.5,-587.6"/>
+<text xml:space="preserve" text-anchor="start" x="679.48" y="-567.8" font-family="Arial" font-weight="bold" font-size="12.00">Payment</text>
+<text xml:space="preserve" text-anchor="start" x="642.47" y="-543.4" font-family="Arial" text-decoration="underline" font-size="12.00">payment_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="642.47" y="-518" font-family="Arial" font-size="12.00">order_id (FK → Orders)</text>
+<text xml:space="preserve" text-anchor="start" x="642.47" y="-493.6" font-family="Arial" font-size="12.00">payment_mode</text>
+<text xml:space="preserve" text-anchor="start" x="642.47" y="-469.2" font-family="Arial" font-size="12.00">payment_status</text>
+<text xml:space="preserve" text-anchor="start" x="642.47" y="-444.8" font-family="Arial" font-size="12.00">amount</text>
+<text xml:space="preserve" text-anchor="start" x="642.47" y="-420.4" font-family="Arial" font-size="12.00">refund_amount</text>
+</g>
+<!-- DELIVERY -->
+<g id="node13" class="node">
+<title>DELIVERY</title>
+<path fill="#ffd9b3" stroke="black" d="M1359.52,-575.4C1359.52,-575.4 1175.46,-575.4 1175.46,-575.4 1169.46,-575.4 1163.46,-569.4 1163.46,-563.4 1163.46,-563.4 1163.46,-431 1163.46,-431 1163.46,-425 1169.46,-419 1175.46,-419 1175.46,-419 1359.52,-419 1359.52,-419 1365.52,-419 1371.52,-425 1371.52,-431 1371.52,-431 1371.52,-563.4 1371.52,-563.4 1371.52,-569.4 1365.52,-575.4 1359.52,-575.4"/>
+<text xml:space="preserve" text-anchor="start" x="1244.14" y="-555.6" font-family="Arial" font-weight="bold" font-size="12.00">Delivery</text>
+<text xml:space="preserve" text-anchor="start" x="1177.46" y="-531.2" font-family="Arial" text-decoration="underline" font-size="12.00">delivery_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="1177.46" y="-505.8" font-family="Arial" font-size="12.00">order_id (FK → Orders)</text>
+<text xml:space="preserve" text-anchor="start" x="1177.46" y="-481.4" font-family="Arial" font-size="12.00">partner_id (FK → DeliveryPartner)</text>
+<text xml:space="preserve" text-anchor="start" x="1177.46" y="-457" font-family="Arial" font-size="12.00">delivery_status</text>
+<text xml:space="preserve" text-anchor="start" x="1177.46" y="-432.6" font-family="Arial" font-size="12.00">delivery_time</text>
+</g>
+<!-- R16 -->
+<g id="node32" class="node">
+<title>R16</title>
+<polygon fill="#eeeeee" stroke="black" points="1267.49,-299.6 1224.13,-281.6 1267.49,-263.6 1310.85,-281.6 1267.49,-299.6"/>
+<text xml:space="preserve" text-anchor="middle" x="1267.49" y="-278" font-family="Arial" font-size="12.00">tracks</text>
+</g>
+<!-- DELIVERY&#45;&gt;R16 -->
+<g id="edge32" class="edge">
+<title>DELIVERY-&gt;R16</title>
+<path fill="none" stroke="black" d="M1267.49,-418.75C1267.49,-418.75 1267.49,-311.61 1267.49,-311.61"/>
+<polygon fill="black" stroke="black" points="1270.99,-311.61 1267.49,-301.61 1263.99,-311.61 1270.99,-311.61"/>
+<text xml:space="preserve" text-anchor="middle" x="1270.55" y="-349.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- DLOC -->
+<g id="node14" class="node">
+<title>DLOC</title>
+<path fill="#ffd9b3" stroke="black" d="M1341.51,-156.4C1341.51,-156.4 1193.47,-156.4 1193.47,-156.4 1187.47,-156.4 1181.47,-150.4 1181.47,-144.4 1181.47,-144.4 1181.47,-12 1181.47,-12 1181.47,-6 1187.47,0 1193.47,0 1193.47,0 1341.51,0 1341.51,0 1347.51,0 1353.51,-6 1353.51,-12 1353.51,-12 1353.51,-144.4 1353.51,-144.4 1353.51,-150.4 1347.51,-156.4 1341.51,-156.4"/>
+<text xml:space="preserve" text-anchor="start" x="1219.14" y="-136.6" font-family="Arial" font-weight="bold" font-size="12.00">DeliveryLocation</text>
+<text xml:space="preserve" text-anchor="start" x="1195.47" y="-112.2" font-family="Arial" text-decoration="underline" font-size="12.00">location_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="1195.47" y="-86.8" font-family="Arial" font-size="12.00">delivery_id (FK → Delivery)</text>
+<text xml:space="preserve" text-anchor="start" x="1195.47" y="-62.4" font-family="Arial" font-size="12.00">latitude</text>
+<text xml:space="preserve" text-anchor="start" x="1195.47" y="-38" font-family="Arial" font-size="12.00">longitude</text>
+<text xml:space="preserve" text-anchor="start" x="1195.47" y="-13.6" font-family="Arial" font-size="12.00">recorded_at</text>
+</g>
+<!-- FREVIEW -->
+<g id="node15" class="node">
+<title>FREVIEW</title>
+<path fill="#e6ccff" stroke="black" d="M542.52,-587.6C542.52,-587.6 366.45,-587.6 366.45,-587.6 360.45,-587.6 354.45,-581.6 354.45,-575.6 354.45,-575.6 354.45,-418.8 354.45,-418.8 354.45,-412.8 360.45,-406.8 366.45,-406.8 366.45,-406.8 542.52,-406.8 542.52,-406.8 548.52,-406.8 554.52,-412.8 554.52,-418.8 554.52,-418.8 554.52,-575.6 554.52,-575.6 554.52,-581.6 548.52,-587.6 542.52,-587.6"/>
+<text xml:space="preserve" text-anchor="start" x="419.15" y="-567.8" font-family="Arial" font-weight="bold" font-size="12.00">FoodReview</text>
+<text xml:space="preserve" text-anchor="start" x="368.45" y="-543.4" font-family="Arial" text-decoration="underline" font-size="12.00">food_review_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="368.45" y="-518" font-family="Arial" font-size="12.00">order_id (FK → Orders)</text>
+<text xml:space="preserve" text-anchor="start" x="368.45" y="-493.6" font-family="Arial" font-size="12.00">restaurant_id (FK → Restaurant)</text>
+<text xml:space="preserve" text-anchor="start" x="368.45" y="-469.2" font-family="Arial" font-size="12.00">rating</text>
+<text xml:space="preserve" text-anchor="start" x="368.45" y="-444.8" font-family="Arial" font-size="12.00">comments</text>
+<text xml:space="preserve" text-anchor="start" x="368.45" y="-420.4" font-family="Arial" font-size="12.00">review_time</text>
+</g>
+<!-- DREVIEW -->
+<g id="node16" class="node">
+<title>DREVIEW</title>
+<path fill="#e6ccff" stroke="black" d="M1048.52,-587.6C1048.52,-587.6 864.46,-587.6 864.46,-587.6 858.46,-587.6 852.46,-581.6 852.46,-575.6 852.46,-575.6 852.46,-418.8 852.46,-418.8 852.46,-412.8 858.46,-406.8 864.46,-406.8 864.46,-406.8 1048.52,-406.8 1048.52,-406.8 1054.52,-406.8 1060.52,-412.8 1060.52,-418.8 1060.52,-418.8 1060.52,-575.6 1060.52,-575.6 1060.52,-581.6 1054.52,-587.6 1048.52,-587.6"/>
+<text xml:space="preserve" text-anchor="start" x="912.46" y="-567.8" font-family="Arial" font-weight="bold" font-size="12.00">DeliveryReview</text>
+<text xml:space="preserve" text-anchor="start" x="866.46" y="-543.4" font-family="Arial" text-decoration="underline" font-size="12.00">delivery_review_id (PK)</text>
+<text xml:space="preserve" text-anchor="start" x="866.46" y="-518" font-family="Arial" font-size="12.00">order_id (FK → Orders)</text>
+<text xml:space="preserve" text-anchor="start" x="866.46" y="-493.6" font-family="Arial" font-size="12.00">partner_id (FK → DeliveryPartner)</text>
+<text xml:space="preserve" text-anchor="start" x="866.46" y="-469.2" font-family="Arial" font-size="12.00">rating</text>
+<text xml:space="preserve" text-anchor="start" x="866.46" y="-444.8" font-family="Arial" font-size="12.00">comments</text>
+<text xml:space="preserve" text-anchor="start" x="866.46" y="-420.4" font-family="Arial" font-size="12.00">review_time</text>
+</g>
+<!-- R1&#45;&gt;CUSTOMER -->
+<g id="edge2" class="edge">
+<title>R1-&gt;CUSTOMER</title>
+<path fill="none" stroke="black" d="M884.49,-2058.15C884.49,-2058.15 884.49,-1940.15 884.49,-1940.15"/>
+<polygon fill="black" stroke="black" points="887.99,-1940.15 884.49,-1930.15 880.99,-1940.15 887.99,-1940.15"/>
+<text xml:space="preserve" text-anchor="middle" x="887.55" y="-1990.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R2&#45;&gt;PARTNER -->
+<g id="edge4" class="edge">
+<title>R2-&gt;PARTNER</title>
+<path fill="none" stroke="black" d="M1247.49,-1974.9C1247.49,-1974.9 1247.49,-1042.71 1247.49,-1042.71"/>
+<polygon fill="black" stroke="black" points="1250.99,-1042.7 1247.49,-1032.71 1243.99,-1042.71 1250.99,-1042.7"/>
+<text xml:space="preserve" text-anchor="middle" x="1327.55" y="-1584.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R3&#45;&gt;OWNER -->
+<g id="edge6" class="edge">
+<title>R3-&gt;OWNER</title>
+<path fill="none" stroke="black" d="M722.83,-2058.85C722.83,-2007.65 722.83,-1862 722.83,-1862 722.83,-1862 708.91,-1862 708.91,-1862"/>
+<polygon fill="black" stroke="black" points="708.91,-1858.5 698.91,-1862 708.91,-1865.5 708.91,-1858.5"/>
+<text xml:space="preserve" text-anchor="middle" x="686.55" y="-1990.1" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R4&#45;&gt;ADDRESS -->
+<g id="edge8" class="edge">
+<title>R4-&gt;ADDRESS</title>
+<path fill="none" stroke="black" d="M893.49,-1652.77C893.49,-1652.77 893.49,-1535.19 893.49,-1535.19"/>
+<polygon fill="black" stroke="black" points="896.99,-1535.19 893.49,-1525.19 889.99,-1535.19 896.99,-1535.19"/>
+<text xml:space="preserve" text-anchor="middle" x="899.07" y="-1584.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R5&#45;&gt;RESTAURANT -->
+<g id="edge10" class="edge">
+<title>R5-&gt;RESTAURANT</title>
+<path fill="none" stroke="black" d="M511.13,-1653.98C511.13,-1653.98 511.13,-1535.13 511.13,-1535.13"/>
+<polygon fill="black" stroke="black" points="514.63,-1535.13 511.13,-1525.13 507.63,-1535.13 514.63,-1535.13"/>
+<text xml:space="preserve" text-anchor="middle" x="470.07" y="-1584.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R6&#45;&gt;MENUITEM -->
+<g id="edge12" class="edge">
+<title>R6-&gt;MENUITEM</title>
+<path fill="none" stroke="black" d="M238.49,-1174.37C238.49,-1174.37 238.49,-1067.2 238.49,-1067.2"/>
+<polygon fill="black" stroke="black" points="241.99,-1067.2 238.49,-1057.2 234.99,-1067.2 241.99,-1067.2"/>
+<text xml:space="preserve" text-anchor="middle" x="209.07" y="-1117.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R7&#45;&gt;MENUITEM -->
+<g id="edge14" class="edge">
+<title>R7-&gt;MENUITEM</title>
+<path fill="none" stroke="black" d="M102.71,-1183.68C102.71,-1183.68 102.71,-1067.31 102.71,-1067.31"/>
+<polygon fill="black" stroke="black" points="106.21,-1067.31 102.71,-1057.31 99.21,-1067.31 106.21,-1067.31"/>
+<text xml:space="preserve" text-anchor="middle" x="98.07" y="-1117.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R8&#45;&gt;ORDERS -->
+<g id="edge16" class="edge">
+<title>R8-&gt;ORDERS</title>
+<path fill="none" stroke="black" d="M712.49,-1569.87C712.49,-1569.87 712.49,-1079.43 712.49,-1079.43"/>
+<polygon fill="black" stroke="black" points="715.99,-1079.43 712.49,-1069.43 708.99,-1079.43 715.99,-1079.43"/>
+<text xml:space="preserve" text-anchor="middle" x="710.07" y="-1261.1" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R9&#45;&gt;ORDERS -->
+<g id="edge18" class="edge">
+<title>R9-&gt;ORDERS</title>
+<path fill="none" stroke="black" d="M576.41,-1185.39C576.41,-1157.72 576.41,-1062 576.41,-1062 576.41,-1062 595.63,-1062 595.63,-1062"/>
+<polygon fill="black" stroke="black" points="595.63,-1065.5 605.63,-1062 595.63,-1058.5 595.63,-1065.5"/>
+<text xml:space="preserve" text-anchor="middle" x="605.07" y="-1117.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R10&#45;&gt;ORDERS -->
+<g id="edge20" class="edge">
+<title>R10-&gt;ORDERS</title>
+<path fill="none" stroke="black" d="M825.84,-1193C808.53,-1193 795.06,-1193 795.06,-1193 795.06,-1193 795.06,-1079.49 795.06,-1079.49"/>
+<polygon fill="black" stroke="black" points="798.56,-1079.49 795.06,-1069.49 791.56,-1079.49 798.56,-1079.49"/>
+<text xml:space="preserve" text-anchor="middle" x="866.07" y="-1117.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R11&#45;&gt;ORDERS -->
+<g id="edge22" class="edge">
+<title>R11-&gt;ORDERS</title>
+<path fill="none" stroke="black" d="M1114.49,-1174.3C1114.49,-1135.46 1114.49,-1049 1114.49,-1049 1114.49,-1049 819.35,-1049 819.35,-1049"/>
+<polygon fill="black" stroke="black" points="819.35,-1045.5 809.35,-1049 819.35,-1052.5 819.35,-1045.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1043.07" y="-1117.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R12&#45;&gt;ORDERITEM -->
+<g id="edge24" class="edge">
+<title>R12-&gt;ORDERITEM</title>
+<path fill="none" stroke="black" d="M196.49,-694.42C196.49,-694.42 196.49,-587.27 196.49,-587.27"/>
+<polygon fill="black" stroke="black" points="199.99,-587.27 196.49,-577.27 192.99,-587.27 199.99,-587.27"/>
+<text xml:space="preserve" text-anchor="middle" x="201.07" y="-637.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R13&#45;&gt;PAYMENT -->
+<g id="edge27" class="edge">
+<title>R13-&gt;PAYMENT</title>
+<path fill="none" stroke="black" d="M705.49,-694.42C705.49,-694.42 705.49,-599.44 705.49,-599.44"/>
+<polygon fill="black" stroke="black" points="708.99,-599.44 705.49,-589.44 701.99,-599.44 708.99,-599.44"/>
+<text xml:space="preserve" text-anchor="middle" x="707.55" y="-637.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R14&#45;&gt;DELIVERY -->
+<g id="edge29" class="edge">
+<title>R14-&gt;DELIVERY</title>
+<path fill="none" stroke="black" d="M1171.39,-710.07C1171.39,-710.07 1171.39,-587.24 1171.39,-587.24"/>
+<polygon fill="black" stroke="black" points="1174.89,-587.24 1171.39,-577.24 1167.89,-587.24 1174.89,-587.24"/>
+<text xml:space="preserve" text-anchor="middle" x="1172.55" y="-637.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R15&#45;&gt;DELIVERY -->
+<g id="edge31" class="edge">
+<title>R15-&gt;DELIVERY</title>
+<path fill="none" stroke="black" d="M1303.49,-694.42C1303.49,-694.42 1303.49,-587.27 1303.49,-587.27"/>
+<polygon fill="black" stroke="black" points="1306.99,-587.27 1303.49,-577.27 1299.99,-587.27 1306.99,-587.27"/>
+<text xml:space="preserve" text-anchor="middle" x="1290.07" y="-637.9" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R16&#45;&gt;DLOC -->
+<g id="edge33" class="edge">
+<title>R16-&gt;DLOC</title>
+<path fill="none" stroke="black" d="M1267.49,-263.19C1267.49,-263.19 1267.49,-168.15 1267.49,-168.15"/>
+<polygon fill="black" stroke="black" points="1270.99,-168.15 1267.49,-158.15 1263.99,-168.15 1270.99,-168.15"/>
+<text xml:space="preserve" text-anchor="middle" x="1272.07" y="-206.7" font-family="Arial" font-size="11.00">M</text>
+</g>
+<!-- R17&#45;&gt;FREVIEW -->
+<g id="edge35" class="edge">
+<title>R17-&gt;FREVIEW</title>
+<path fill="none" stroke="black" d="M454.49,-694.42C454.49,-694.42 454.49,-599.44 454.49,-599.44"/>
+<polygon fill="black" stroke="black" points="457.99,-599.44 454.49,-589.44 450.99,-599.44 457.99,-599.44"/>
+<text xml:space="preserve" text-anchor="middle" x="457.55" y="-637.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+<!-- R18&#45;&gt;DREVIEW -->
+<g id="edge38" class="edge">
+<title>R18-&gt;DREVIEW</title>
+<path fill="none" stroke="black" d="M922.05,-698.32C922.05,-698.32 922.05,-599.5 922.05,-599.5"/>
+<polygon fill="black" stroke="black" points="925.55,-599.5 922.05,-589.5 918.55,-599.5 925.55,-599.5"/>
+<text xml:space="preserve" text-anchor="middle" x="959.55" y="-637.9" font-family="Arial" font-size="11.00">1</text>
+</g>
+</g>
+</svg>
