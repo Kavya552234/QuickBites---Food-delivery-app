@@ -66,6 +66,10 @@ npm run dev
 
 ## Team Contributions
 
-| Name | Contribution |
-|------|--------------|
-| Add names and roles here | |
+| Name | Roll No | Contribution |
+|---|---|---|
+| Poladasu Tanmai Manjula | 24110261 | Custom B+ Tree implementation, database engine integration, and performance analysis |
+| Gullapalli Kavya Durga Sri | 24110125 | B+ Tree operations integration, API/backend support, and application workflow integration |
+| Pravallika Matha | 24110198 | Frontend/backend module support, testing, and project validation |
+| Modalavalasa Anusha | 24110206 | REST API development, authentication, and role-based access control implementation |
+| Reddyboina Triveni | 24110295 | Testing, benchmarking support, visualization, and documentation |
