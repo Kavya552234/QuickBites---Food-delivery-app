@@ -1,100 +1,107 @@
 # Assignment 4 — Sharding of the Developed Application
 
-## Overview
+## Project Overview
 
-This assignment extends the QuickBites food delivery system by implementing **horizontal scaling using database sharding**.
+This assignment extends the **QuickBites Food Delivery System** by implementing **horizontal scaling using database sharding**.
 
-The existing database application was modified to support data partitioning across multiple simulated shards. The assignment focuses on selecting a suitable shard key, migrating data, implementing query routing, and analysing scalability trade-offs.
+The existing database application was modified to support logical data partitioning across multiple simulated shards. The project demonstrates shard key selection, data distribution, query routing, shard isolation, and scalability analysis.
 
-The system demonstrates:
+The implementation focuses on:
 
 - Shard Key Selection
 - Hash-Based Data Partitioning
 - Data Migration
 - Query Routing
 - Shard Isolation
-- Scalability Analysis
+- Scalability Trade-off Analysis
+
 
 ---
 
 # Sharding Implementation
 
-## Shard Key Selection
+## 1. Shard Key Selection
 
-Selected shard key:
+### Selected Shard Key
 
-
+```
 item_id
+```
 
+The `item_id` attribute from the **MenuItem** table was selected as the shard key.
 
 ### Justification
 
 ### High Cardinality
 
-item_id is the primary key of the MenuItem table and uniquely identifies every record.
+`item_id` is the primary key of the MenuItem table and uniquely identifies each record.
 
-This provides a large number of distinct values and allows balanced distribution of records.
+This provides high cardinality and enables even distribution of records across shards.
 
 ### Query Alignment
 
-Most menu operations use item_id:
+Most menu-related operations use `item_id`:
 
 - Fetch menu item
 - Update menu item
 - Delete menu item
 
-Using item_id allows direct routing to the correct shard without searching all shards.
+Using `item_id` allows direct routing of queries to the correct shard.
 
 ### Stability
 
-item_id remains unchanged after insertion, preventing expensive data movement between shards.
+`item_id` remains unchanged after insertion, preventing expensive data migration between shards.
+
 
 ---
 
-# Partitioning Strategy
+# 2. Partitioning Strategy
 
-Implemented strategy:
+The implemented partitioning strategy is:
 
-
-Hash Based Partitioning
-
+## Hash-Based Partitioning
 
 Shard calculation:
 
-
+```python
 shard_id = item_id % 3
+```
 
+Data distribution rule:
 
-Distribution rule:
-
-| Condition | Shard |
+| Condition | Destination |
 |---|---|
 | item_id % 3 = 0 | shard_0 |
 | item_id % 3 = 1 | shard_1 |
 | item_id % 3 = 2 | shard_2 |
 
+
 ## Why Hash Partitioning?
 
-- Provides uniform data distribution
-- Avoids hotspot formation
-- Provides constant time shard identification
-- Does not require additional lookup tables
+Hash partitioning was chosen because:
+
+- It distributes records uniformly
+- It avoids uneven load caused by sequential IDs
+- It provides fast shard identification
+- It does not require an additional lookup table
+
 
 ---
 
-# Data Partitioning
+# 3. Data Partitioning and Migration
 
-The original MenuItem table was divided into three simulated shard tables:
+The original `MenuItem` table was divided into three shard tables:
 
-
+```
 shard_0_menuitem
 shard_1_menuitem
 shard_2_menuitem
-
+```
 
 Each shard maintains the same schema as the original MenuItem table.
 
-## Data Migration
+
+## Migration Logic
 
 Data was migrated using:
 
@@ -103,172 +110,260 @@ INSERT INTO shard_X_menuitem
 SELECT *
 FROM menuitem
 WHERE item_id % 3 = X;
+```
 
-where X represents shard number.
 
 Example:
 
-item_id % 3 = 0 → shard_0_menuitem
-item_id % 3 = 1 → shard_1_menuitem
-item_id % 3 = 2 → shard_2_menuitem
-Validation
+```
+item_id % 3 = 0  →  shard_0_menuitem
+
+item_id % 3 = 1  →  shard_1_menuitem
+
+item_id % 3 = 2  →  shard_2_menuitem
+```
+
+
+---
+
+# 4. Data Validation
 
 After migration, the following checks were performed:
 
-- Total rows across all shards match original MenuItem count
+- Total rows across all shards match original table count
 
-- No duplicate item_id values exist across shards
+- No duplicate `item_id` values exist across shards
 
 - No records were lost during migration
 
 - Data distribution was verified
 
+
 Final distribution:
 
-Shard	Records
-shard_0	7
-shard_1	5
-shard_2	7
-Query Routing
+| Shard | Number of Records |
+|---|---|
+| shard_0_menuitem | 7 |
+| shard_1_menuitem | 5 |
+| shard_2_menuitem | 7 |
 
-A shard router was implemented to direct queries to the correct shard.
+
+The validation confirms correct partitioning without overlap or data loss.
+
+
+---
+
+# 5. Query Routing Implementation
+
+A shard router was implemented to direct every request to the correct shard.
 
 Routing logic:
 
+```python
 shard = item_id % 3
-Single Item Operations
+```
+
+
+## Single Item Operations
 
 Operations:
 
-GET
-PUT
-DELETE
+- GET
+- PUT
+- DELETE
 
-are routed directly to the required shard.
+are directly routed to the required shard.
+
 
 Example:
 
+```
 item_id = 701
 
 701 % 3 = 2
 
-Request goes to shard_2_menuitem
+Request is routed to shard_2_menuitem
+```
+
 
 This avoids unnecessary queries on other shards.
 
-Insert Operations
+
+---
+
+## Insert Operations
 
 New records are inserted into the shard calculated using:
 
+```python
 item_id % 3
+```
 
-The application automatically selects the correct shard.
+The application automatically selects the correct shard before insertion.
 
-Multi-Shard Queries
 
-For operations requiring complete data:
+---
+
+## Multi-Shard Queries
+
+For queries requiring complete data:
 
 Example:
 
+```
 GET all menu items
+```
 
 The system:
 
-Queries all shards
-Collects results
-Combines and returns the final response
-Sharding Approach
+1. Queries all shards
+2. Collects results
+3. Merges the output
+4. Returns the final response
 
-The project uses logical sharding using multiple tables inside one database instance.
 
-Created simulated nodes:
+---
 
+# 6. Sharding Approach and Isolation
+
+The project implements **logical sharding using multiple tables inside a single database instance**.
+
+The simulated shards are:
+
+```
 shard_0_menuitem
 shard_1_menuitem
 shard_2_menuitem
+```
 
-Isolation is achieved through:
 
-Separate shard tables
-Deterministic routing logic
-Controlled application access
+Isolation is maintained using:
 
-Each record belongs to exactly one shard.
+- Separate shard tables
+- Deterministic shard mapping
+- Application-level routing
 
-Scalability and Trade-off Analysis
-Horizontal vs Vertical Scaling
-Vertical Scaling
 
-Improves performance by increasing resources of a single database server.
+Each record exists in exactly one shard, preventing duplication and inconsistency.
+
+
+---
+
+# 7. Scalability and Trade-off Analysis
+
+
+## Horizontal vs Vertical Scaling
+
+### Vertical Scaling
+
+Vertical scaling improves performance by upgrading a single database server.
+
+Examples:
+
+- Increasing RAM
+- Increasing CPU capacity
+- Increasing storage
+
 
 Limitations:
 
-Hardware limitations
-Higher upgrade cost
-Horizontal Scaling
+- Hardware limits
+- Higher upgrade cost
 
-Distributes data across multiple shards.
+
+### Horizontal Scaling
+
+Horizontal scaling distributes data across multiple shards.
 
 Advantages:
 
-Increased storage capacity
-Better load distribution
-Parallel processing support
+- Increased storage capacity
+- Better workload distribution
+- Parallel query execution
+- Improved scalability
 
-The implemented design follows horizontal scaling.
 
-Consistency
+The implemented system follows horizontal scaling using sharding.
+
+
+---
+
+# Consistency
 
 Single-shard operations provide strong consistency because only one shard is accessed.
 
-Multi-shard queries require combining data from multiple shards, which may require synchronization.
+Multi-shard operations require combining results from multiple shards and may require synchronization between shards.
 
-Availability
+
+---
+
+# Availability
 
 If one shard fails:
 
-Data stored in that shard becomes unavailable
-Other shards continue operating
+- Data stored in that shard becomes unavailable
+- Other shards continue functioning
 
-This provides partial availability and failure isolation.
 
-Partition Tolerance
+This provides:
 
-The system handles partitioning through:
+- Partial availability
+- Better failure isolation
 
-Independent shard tables
-Deterministic shard mapping
-Controlled query routing
 
-A failure in one shard affects only the data stored in that shard.
+---
 
-Results Achieved
+# Partition Tolerance
 
-The system successfully implements:
+The system handles partitioning using:
 
-- Three simulated shards
+- Independent shard tables
+- Deterministic shard mapping
+- Controlled query routing
+
+
+A failure in one shard affects only the records stored inside that shard.
+
+
+---
+
+# Results Achieved
+
+The project successfully implements:
+
+- Selection of a suitable shard key
 
 - Hash-based partitioning
 
+- Three simulated shards
+
 - Correct data migration
 
-- Zero duplication between shards
+- Zero overlap between shards
 
 - Efficient query routing
 
 - Horizontal scaling simulation
 
-- Scalability trade-off analysis
+- Scalability analysis
 
-Limitations
-Shards are simulated using tables instead of separate physical servers
-No replication mechanism implemented
-Range queries require searching multiple shards
-Small dataset may not represent large-scale distribution behaviour
-Conclusion
+
+---
+
+# Limitations
+
+- Shards are simulated using tables instead of separate physical servers
+- No replication mechanism is implemented
+- Range queries require checking multiple shards
+- Dataset size is small compared to real distributed systems
+
+
+---
+
+# Conclusion
 
 The QuickBites database system was successfully extended with sharding capabilities.
 
-The implementation demonstrates how distributed database systems improve scalability by partitioning data and routing queries efficiently across multiple shards.
+The implementation demonstrates how distributed database systems improve scalability by partitioning data, routing queries efficiently, and managing trade-offs between scalability, consistency, and availability.
 
-The project provides practical understanding of data distribution, query routing, and scalability challenges in modern database systems.
+This assignment provided practical understanding of real-world distributed database concepts and horizontal scaling techniques.
