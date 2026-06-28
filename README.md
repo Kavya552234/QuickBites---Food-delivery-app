@@ -246,5 +246,5 @@ It provides practical implementation experience with concepts used in real-world
 | Modalavalasa Anusha | 24110206 |
 
 Course: CS432 — Databases  
-Prof: Under the guidance of Yogesh Kumar Meena 
+Prof: Under the guidance of Yogesh Kumar Meena, 
 Indian Institute of Technology Gandhinagar 
