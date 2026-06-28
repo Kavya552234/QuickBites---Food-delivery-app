@@ -357,6 +357,17 @@ The project successfully implements:
 - Range queries require checking multiple shards
 - Dataset size is small compared to real distributed systems
 
+---
+
+# Team Contributions
+
+| Name | Roll No | Contribution |
+|---|---|---|
+| Poladasu Tanmai Manjula | 24110261 | Sharding architecture support and database partitioning implementation |
+| Gullapalli Kavya Durga Sri | 24110125 | Shard table creation, data migration, validation queries, and report contribution |
+| Pravallika Matha | 24110198 | Query routing support and shard testing |
+| Modalavalasa Anusha | 24110206 | API integration with shard routing and application-level changes |
+| Reddyboina Triveni | 24110295 | Scalability analysis, testing, and final report compilation |
 
 ---
 
